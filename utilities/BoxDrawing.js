@@ -15,8 +15,9 @@ function BoxifyString(str){
 }
 
 function Boxify(s){
+    let arr;
     if(typeof s == 'string') return BoxifyString(s);
-    else if(Array.isArray(s)) const arr = s;
+    else if(Array.isArray(s)) arr = s;
 
     let result = firstLine + '\n';
     let maxLength = Math.max(...(arr.map(el => el.length)));
@@ -29,9 +30,9 @@ function Boxify(s){
         const spaces = ' '.repeat(maxLength-str.length);
         result += '`' + box.side + ' ' + str + spaces + ' ' + box.side + '`\n';
     });
-    result += bottom;
+    result += bot;
 
     return result;
 }
 
-export default Boxify;
+exports.Boxify = Boxify;

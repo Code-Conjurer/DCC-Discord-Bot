@@ -1,4 +1,4 @@
-import Boxify from "./utilities/BoxDrawing.js"
+const BoxDrawing = require("../utilities/BoxDrawing.js");
 
 
 const rollRegex = new RegExp(
@@ -12,7 +12,7 @@ const rollRegex = new RegExp(
 // args = d2+3
 // args = d20
 // args = 1d20 + 3
-function roll(message, args, die){
+function roll(message, args){
 
     const argsStr = args.join(' ');
 
@@ -22,7 +22,7 @@ function roll(message, args, die){
     var matches;
     while((matches = rollRegex.exec(argsStr)) != null){
         const numDice = matches[1] == undefined ? 1: parseInt(matches[1]);
-        const diceSize = die == undefined ? parseInt(matches[2]): die;
+        const diceSize = parseInt(matches[2]);
         const oporator = matches[4] == undefined ? '+' : matches[4];
         const modifier = matches[5] == undefined ? '0' : parseInt(matches[4]);
 
@@ -55,9 +55,9 @@ function roll(message, args, die){
         diceBreakdown.push(breakdown);
     }
 
-    diceBreakdown.unshift(`${message.author.name} rolls: ${sum}`);
+    diceBreakdown.unshift(`${message.author.username} rolls: ${sum}`);
     
-    message.channel.send(Boxify(diceBreakdown));
+    message.channel.send(BoxDrawing.Boxify(diceBreakdown));
 }
 
 module.exports = {
@@ -65,6 +65,6 @@ module.exports = {
     aliases: ['r'],
 	description: 'Information about the arguments provided.',
 	execute(message, args) {
-        roll(message, args, undefined);
+        roll(message, args);
 	},
 };
