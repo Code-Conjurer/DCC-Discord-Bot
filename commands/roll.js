@@ -24,7 +24,7 @@ function roll(message, args){
         const numDice = matches[1] == undefined ? 1: parseInt(matches[1]);
         const diceSize = parseInt(matches[2]);
         const oporator = matches[4] == undefined ? '+' : matches[4];
-        const modifier = matches[5] == undefined ? '0' : parseInt(matches[4]);
+        const modifier = matches[5] == undefined ? 0 : parseInt(matches[5]);
 
         let localSum = 0;
         let breakdown = 'd' + diceSize + ': [ ';
@@ -66,5 +66,5 @@ module.exports = {
 	description: 'Information about the arguments provided.',
 	execute(message, args) {
         roll(message, args);
-	},
+	}
 };
