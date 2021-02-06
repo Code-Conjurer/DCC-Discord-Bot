@@ -1,9 +1,9 @@
-const fs = require('fs');
-const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
-const client = new Discord.Client();
-client.commands = new Discord.Collection();
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+import { readdirSync } from 'fs';
+import { Client, Collection } from 'discord.js';
+import { prefix, token } from './config.json';
+const client = new Client();
+client.commands = new Collection();
+const commandFiles = readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
@@ -20,9 +20,9 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
 
-    if (!client.commands.has(commandName)) return;
+    const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
-    const command = client.commands.get(commandName);
+    if (!command) return;
 
     if (command.args && !args.length) {
         return message.channel.send(`I require arguments, ${message.author}!`);
