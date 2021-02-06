@@ -1,0 +1,1042 @@
+{
+    "1": {
+      "name": "alchemist",
+      "trained_weapon": {
+        "name": "staff",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "oil",
+          "quantity": "1 flask"
+        }
+      ]
+    },
+    "2": {
+      "name": "animal trainer",
+      "trained_weapon": {
+        "name": "club",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "pony",
+          "quantity": ""
+        }
+      ]
+    },
+    "3": {
+      "name": "armorer",
+      "trained_weapon": {
+        "name": "hammer",
+        "type": "dagger"
+      },
+      "trade_goods": [
+        {
+          "name": "iron helmet",
+          "quantity": ""
+        }
+      ]
+    },
+    "4": {
+      "name": "astrologer",
+      "trained_weapon": {
+        "name": "dagger",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "spyglass",
+          "quantity": ""
+        }
+      ]
+    },
+    "5": {
+      "name": "barber",
+      "trained_weapon": {
+        "name": "razor",
+        "type": "dagger"
+      },
+      "trade_goods": [
+        {
+          "name": "scissors",
+          "quantity": ""
+        }
+      ]
+    },
+    "6": {
+      "name": "beadle",
+      "trained_weapon": {
+        "name": "staff",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "holy symbol",
+          "quantity": ""
+        }
+      ]
+    },
+    "7": {
+      "name": "beekeeper",
+      "trained_weapon": {
+        "name": "staff",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "honey",
+          "quantity": "1 jar"
+        }
+      ]
+    },
+    "8": {
+      "name": "blacksmith",
+      "trained_weapon": {
+        "name": "hammer",
+        "type": "club"
+      },
+      "trade_goods": [
+        {
+          "name": "steel tongs",
+          "quantity": ""
+        }
+      ]
+    },
+    "9": {
+      "name": "butcher",
+      "trained_weapon": {
+        "name": "cleaver",
+        "type": "axe"
+      },
+      "trade_goods": [
+        {
+          "name": "side of beef",
+          "quantity": ""
+        }
+      ]
+    },
+    "10": {
+      "name": "caravan guard",
+      "trained_weapon": {
+        "name": "short sword",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "linen",
+          "quantity": "1 yard"
+        }
+      ]
+    },
+    "11": {
+      "name": "cheesemaker",
+      "trained_weapon": {
+        "name": "cudgel",
+        "type": "staff"
+      },
+      "trade_goods": [
+        {
+          "name": "stinky cheese",
+          "quantity": ""
+        }
+      ]
+    },
+    "12": {
+      "name": "cobbler",
+      "trained_weapon": {
+        "name": "awl",
+        "type": "dagger"
+      },
+      "trade_goods": [
+        {
+          "name": "shoehorn",
+          "quantity": ""
+        }
+      ]
+    },
+    "13": {
+      "name": "confidence artist",
+      "trained_weapon": {
+        "name": "dagger",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "quality cloak",
+          "quantity": ""
+        }
+      ]
+    },
+    "14": {
+      "name": "cooper",
+      "trained_weapon": {
+        "name": "crowbar",
+        "type": "club"
+      },
+      "trade_goods": [
+        {
+          "name": "barrel",
+          "quantity": ""
+        }
+      ]
+    },
+    "15": {
+      "name": "costermonger",
+      "trained_weapon": {
+        "name": "knife",
+        "type": "dagger"
+      },
+      "trade_goods": [
+        {
+          "name": "fruit",
+          "quantity": ""
+        }
+      ]
+    },
+    "16": {
+      "name": "cutpurse",
+      "trained_weapon": {
+        "name": "dagger",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "small chest",
+          "quantity": ""
+        }
+      ]
+    },
+    "17": {
+      "name": "ditch digger",
+      "trained_weapon": {
+        "name": "shovel",
+        "type": "staff"
+      },
+      "trade_goods": [
+        {
+          "name": "fine dirt",
+          "quantity": "1 lb"
+        }
+      ]
+    },
+    "18": {
+      "name": "dock worker",
+      "trained_weapon": {
+        "name": "pole",
+        "type": "staff"
+      },
+      "trade_goods": [
+        {
+          "name": "late RPG book",
+          "quantity": ""
+        }
+      ]
+    },
+    "19": {
+      "name": "dwarven apothecarist",
+      "trained_weapon": {
+        "name": "cudgel",
+        "type": "staff"
+      },
+      "trade_goods": [
+        {
+          "name": "steel vial",
+          "quantity": ""
+        }
+      ]
+    },
+    "20": {
+      "name": "dwarven blacksmith",
+      "trained_weapon": {
+        "name": "hammer",
+        "type": "club"
+      },
+      "trade_goods": [
+        {
+          "name": "mithril",
+          "quantity": "1 oz"
+        }
+      ]
+    },
+    "21": {
+      "name": "dwarven chest-maker",
+      "trained_weapon": {
+        "name": "chisel",
+        "type": "dagger"
+      },
+      "trade_goods": [
+        {
+          "name": "wood",
+          "quantity": "10 lb"
+        }
+      ]
+    },
+    "22": {
+      "name": "dwarven herder",
+      "trained_weapon": {
+        "name": "staff",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "farm animal",
+          "quantity": ""
+        }
+      ]
+    },
+    "23": {
+      "name": "dwarven miner",
+      "trained_weapon": {
+        "name": "pick",
+        "type": "club"
+      },
+      "trade_goods": [
+        {
+          "name": "lantern",
+          "quantity": ""
+        }
+      ]
+    },
+    "25": {
+      "name": "dwarven mushroom-farmer",
+      "trained_weapon": {
+        "name": "shovel",
+        "type": "staff"
+      },
+      "trade_goods": [
+        {
+          "name": "sack",
+          "quantity": ""
+        }
+      ]
+    },
+    "26": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "27": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "29": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "30": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "31": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "32": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "33": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "35": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "36": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "37": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "38": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "39": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "50": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "51": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "53": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "55": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "56": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "58": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "59": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "60": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "61": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "62": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "63": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "64": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "65": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "66": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "67": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "68": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "70": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "71": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "72": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "73": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "74": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "75": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "76": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "77": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "78": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "79": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "80": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "81": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "82": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "83": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "84": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "85": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "86": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "87": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "88": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "89": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "91": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "92": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "94": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "95": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "96": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "97": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "98": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    },
+    "99": {
+      "name": "",
+      "trained_weapon": {
+        "name": "",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "",
+          "quantity": ""
+        }
+      ]
+    }
+  }
