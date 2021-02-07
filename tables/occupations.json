@@ -280,7 +280,7 @@
       },
       "trade_goods": [
         {
-          "name": "farm animal",
+          "name": "sow**",
           "quantity": ""
         }
       ]
@@ -312,729 +312,749 @@
       ]
     },
     "26": {
-      "name": "",
+      "name": "dwarven rat-catcher",
       "trained_weapon": {
-        "name": "",
+        "name": "club",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "net",
           "quantity": ""
         }
       ]
     },
     "27": {
-      "name": "",
+      "name": "dwarven stonemason",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "hammer",
+        "type": "club"
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "fine stone",
+          "quantity": "10 lb"
         }
       ]
     },
     "29": {
-      "name": "",
+      "name": "elven artisan",
       "trained_weapon": {
-        "name": "",
+        "name": "staff",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "clay",
+          "quantity": "1 lb"
         }
       ]
     },
     "30": {
-      "name": "",
+      "name": "elven barrister",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "quill",
+        "type": "dart"
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "book",
           "quantity": ""
         }
       ]
     },
     "31": {
-      "name": "",
+      "name": "elven chandler",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "scissord",
+        "type": "dagger"
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "candles",
+          "quantity": "20"
         }
       ]
     },
     "32": {
-      "name": "",
+      "name": "elven falconer",
       "trained_weapon": {
-        "name": "",
+        "name": "dagger",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "falcon",
           "quantity": ""
         }
       ]
     },
     "33": {
-      "name": "",
+      "name": "elven forester",
       "trained_weapon": {
-        "name": "",
+        "name": "staff",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "herbs",
+          "quantity": "1 lb"
         }
       ]
     },
     "35": {
-      "name": "",
+      "name": "elven glassblower",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "hammer",
+        "type": "club"
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "glass beads",
+          "quantity": "1 pouch"
         }
       ]
     },
     "36": {
-      "name": "",
+      "name": "elven navigator",
       "trained_weapon": {
-        "name": "",
+        "name": "shortbow",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "spyglass",
           "quantity": ""
         }
       ]
     },
     "37": {
-      "name": "",
+      "name": "elven sage",
       "trained_weapon": {
-        "name": "",
+        "name": "dagger",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "parchment",
           "quantity": ""
-        }
-      ]
-    },
-    "38": {
-      "name": "",
-      "trained_weapon": {
-        "name": "",
-        "type": ""
-      },
-      "trade_goods": [
+        },
         {
-          "name": "",
+          "name": "quill pen",
           "quantity": ""
         }
       ]
     },
     "39": {
-      "name": "",
+      "name": "farmer",
       "trained_weapon": {
-        "name": "",
+        "name": "pitchfork",
+        "type": "spear"
+      },
+      "trade_goods": [
+        {
+          "name": "hen**",
+          "quantity": ""
+        }
+      ]
+    },
+    "48": {
+      "name": "fortune-teller",
+      "trained_weapon": {
+        "name": "dagger",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "tarot deck",
+          "quantity": ""
+        }
+      ]
+    },
+    "49": {
+      "name": "gambler",
+      "trained_weapon": {
+        "name": "club",
+        "type": ""
+      },
+      "trade_goods": [
+        {
+          "name": "dice",
           "quantity": ""
         }
       ]
     },
     "50": {
-      "name": "",
+      "name": "gongfarmer",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "trowel",
+        "type": "dagger"
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "night soil",
+          "quantity": "1 sack"
         }
       ]
     },
     "51": {
-      "name": "",
+      "name": "grave digger",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "shovel",
+        "type": "staff"
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "trowel",
           "quantity": ""
         }
       ]
     },
     "53": {
-      "name": "",
+      "name": "guild begger",
       "trained_weapon": {
-        "name": "",
+        "name": "sling",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "crutches",
           "quantity": ""
         }
       ]
     },
     "55": {
-      "name": "",
+      "name": "halfling chicken butcher",
       "trained_weapon": {
-        "name": "",
+        "name": "hand axe",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "chicken meat",
+          "quantity": "5 lb"
         }
       ]
     },
     "56": {
-      "name": "",
+      "name": "halfling dyer",
       "trained_weapon": {
-        "name": "",
+        "name": "staff",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "fabric",
+          "quantity": "3 yards"
         }
       ]
     },
     "58": {
-      "name": "",
+      "name": "halfling glovemaker",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "awl",
+        "type": "dagger"
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "gloves",
+          "quantity": "4 pairs"
         }
       ]
     },
     "59": {
-      "name": "",
+      "name": "halfling gypsy",
       "trained_weapon": {
-        "name": "",
+        "name": "sling",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "hex doll",
           "quantity": ""
         }
       ]
     },
     "60": {
-      "name": "",
+      "name": "halfling haberdasher",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "scissors",
+        "type": "dagger"
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "fine suits",
+          "quantity": "3 sets"
         }
       ]
     },
     "61": {
-      "name": "",
+      "name": "halfling mariner",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "knife",
+        "type": "dagger"
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "sailcloth",
+          "quantity": "2 yards"
         }
       ]
     },
     "62": {
-      "name": "",
+      "name": "halfling moneylender",
       "trained_weapon": {
-        "name": "",
+        "name": "short sword",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "gp",
+          "quantity": "5"
+        },
+        {
+          "name": "sp",
+          "quantity": "10"
+        },
+        {
+          "name": "cp",
+          "quantity": "200"
         }
       ]
     },
     "63": {
-      "name": "",
+      "name": "halfling trader",
       "trained_weapon": {
-        "name": "",
+        "name": "short sword",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "sp",
+          "quantity": "20"
         }
       ]
     },
     "64": {
-      "name": "",
+      "name": "halfling vagrant",
       "trained_weapon": {
-        "name": "",
+        "name": "club",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "begging bowl",
           "quantity": ""
         }
       ]
     },
     "65": {
-      "name": "",
+      "name": "healer",
       "trained_weapon": {
-        "name": "",
+        "name": "club",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "holy water",
+          "quantity": "1 vial"
         }
       ]
     },
     "66": {
-      "name": "",
+      "name": "herbalist",
       "trained_weapon": {
-        "name": "",
+        "name": "club",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "herbs",
+          "quantity": "1 lb"
         }
       ]
     },
     "67": {
-      "name": "",
+      "name": "herder",
       "trained_weapon": {
-        "name": "",
+        "name": "staff",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "herding dog**",
           "quantity": ""
         }
       ]
     },
     "68": {
-      "name": "",
+      "name": "hunter",
       "trained_weapon": {
-        "name": "",
+        "name": "shortbow",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "deer pelt",
           "quantity": ""
         }
       ]
     },
     "70": {
-      "name": "",
+      "name": "indentured servant",
       "trained_weapon": {
-        "name": "",
+        "name": "staff",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "locket",
           "quantity": ""
         }
       ]
     },
     "71": {
-      "name": "",
+      "name": "jester",
       "trained_weapon": {
-        "name": "",
+        "name": "dart",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "silk clothes",
           "quantity": ""
         }
       ]
     },
     "72": {
-      "name": "",
+      "name": "jewler",
       "trained_weapon": {
-        "name": "",
+        "name": "dagger",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "gem worth 20 gp",
           "quantity": ""
         }
       ]
     },
     "73": {
-      "name": "",
+      "name": "locksmith",
       "trained_weapon": {
-        "name": "",
+        "name": "dagger",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "fine tools",
           "quantity": ""
         }
       ]
     },
     "74": {
-      "name": "",
+      "name": "mendicant",
       "trained_weapon": {
-        "name": "",
+        "name": "club",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "cheese dip",
           "quantity": ""
         }
       ]
     },
     "75": {
-      "name": "",
+      "name": "mercenary",
       "trained_weapon": {
-        "name": "",
+        "name": "longsword",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "hide armor",
           "quantity": ""
         }
       ]
     },
     "76": {
-      "name": "",
+      "name": "merchant",
       "trained_weapon": {
-        "name": "",
+        "name": "dagger",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "gp",
+          "quantity": "4"
+        },
+        {
+          "name": "sp",
+          "quantity": "14"
+        },
+        {
+          "name": "cp",
+          "quantity": "27"
         }
       ]
     },
     "77": {
-      "name": "",
+      "name": "miller/baker",
       "trained_weapon": {
-        "name": "",
+        "name": "club",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "flour",
+          "quantity": "1 lb"
         }
       ]
     },
     "78": {
-      "name": "",
+      "name": "minstrel",
       "trained_weapon": {
-        "name": "",
+        "name": "dagger",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "ukulele",
           "quantity": ""
         }
       ]
     },
     "79": {
-      "name": "",
+      "name": "noble",
       "trained_weapon": {
-        "name": "",
+        "name": "longsword",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "gold ring worth 10 gp",
           "quantity": ""
         }
       ]
     },
     "80": {
-      "name": "",
+      "name": "orphan",
       "trained_weapon": {
-        "name": "",
+        "name": "club",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "rag doll",
           "quantity": ""
         }
       ]
     },
     "81": {
-      "name": "",
+      "name": "oster",
       "trained_weapon": {
-        "name": "",
+        "name": "staff",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "bridle",
           "quantity": ""
         }
       ]
     },
     "82": {
-      "name": "",
+      "name": "outlaw",
       "trained_weapon": {
-        "name": "",
+        "name": "short sword",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "leather armor",
           "quantity": ""
         }
       ]
     },
     "83": {
-      "name": "",
+      "name": "rope maker",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "knife",
+        "type": "dagger"
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "rope",
+          "quantity": "100'"
         }
       ]
     },
     "84": {
-      "name": "",
+      "name": "scribe",
       "trained_weapon": {
-        "name": "",
+        "name": "dart",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "parchment",
+          "quantity": "10 sheets"
         }
       ]
     },
     "85": {
-      "name": "",
+      "name": "shaman",
       "trained_weapon": {
-        "name": "",
+        "name": "mace",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "herbs",
+          "quantity": "1 lb"
         }
       ]
     },
     "86": {
-      "name": "",
+      "name": "slave",
       "trained_weapon": {
-        "name": "",
+        "name": "club",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "strange-looking rock",
           "quantity": ""
         }
       ]
     },
     "87": {
-      "name": "",
+      "name": "smuggler",
       "trained_weapon": {
-        "name": "",
+        "name": "sling",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "waterproof sack",
           "quantity": ""
         }
       ]
     },
     "88": {
-      "name": "",
+      "name": "soldier",
       "trained_weapon": {
-        "name": "",
+        "name": "spear",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "shield",
           "quantity": ""
         }
       ]
     },
     "89": {
-      "name": "",
+      "name": "squire",
       "trained_weapon": {
-        "name": "",
+        "name": "longsword",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "steel helmet",
           "quantity": ""
         }
       ]
     },
     "91": {
-      "name": "",
+      "name": "tax collector",
       "trained_weapon": {
-        "name": "",
+        "name": "longsword",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
+          "name": "cp",
+          "quantity": "100"
         }
       ]
     },
     "92": {
-      "name": "",
+      "name": "trapper",
       "trained_weapon": {
-        "name": "",
+        "name": "sling",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "badger pelt",
           "quantity": ""
         }
       ]
     },
     "94": {
-      "name": "",
+      "name": "urchin",
       "trained_weapon": {
-        "name": "",
-        "type": ""
+        "name": "stick",
+        "type": "club"
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "begging bowl",
           "quantity": ""
         }
       ]
     },
     "95": {
-      "name": "",
+      "name": "wainwright",
       "trained_weapon": {
-        "name": "",
+        "name": "club",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "puchcart***",
           "quantity": ""
         }
       ]
     },
     "96": {
-      "name": "",
+      "name": "weaver",
       "trained_weapon": {
-        "name": "",
+        "name": "dagger",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "fine suit of clothes",
           "quantity": ""
         }
       ]
     },
     "97": {
-      "name": "",
+      "name": "wizard's apprentice",
       "trained_weapon": {
-        "name": "",
+        "name": "dagger",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
+          "name": "black grimoire",
           "quantity": ""
         }
       ]
     },
     "98": {
-      "name": "",
+      "name": "woodcutter",
       "trained_weapon": {
-        "name": "",
+        "name": "handaxe",
         "type": ""
       },
       "trade_goods": [
         {
-          "name": "",
-          "quantity": ""
-        }
-      ]
-    },
-    "99": {
-      "name": "",
-      "trained_weapon": {
-        "name": "",
-        "type": ""
-      },
-      "trade_goods": [
-        {
-          "name": "",
+          "name": "bundle of wood",
           "quantity": ""
         }
       ]
