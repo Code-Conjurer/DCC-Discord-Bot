@@ -46,7 +46,7 @@ function roll(message, args){
                 localSum *= modifier;
                 break;
             case '/':
-                Math.floor(localSum /= modifier);
+                localSum = Math.floor(localSum / modifier);
                 break;
         }
 

@@ -1,0 +1,122 @@
+{
+    "1": {
+      "name": "harsh winter",
+      "modifier": "attack rolls"
+    },
+    "2": {
+      "name": "the bull",
+      "modifier": "melee attack rolls"
+    },
+    "3": {
+      "name": "fortunate date",
+      "modifier": "missile fire attack rolls"
+    },
+    "4": {
+      "name": "raised by wolves",
+      "modifier": "unarmed attack rolls"
+    },
+    "5": {
+      "name": "conceived on horseback",
+      "modifier": "mounted attack rolls"
+    },
+    "6": {
+      "name": "born on the battlefield",
+      "modifier": "damage rolls"
+    },
+    "7": {
+      "name": "path of the bear",
+      "modifier": "melee damage rolls"
+    },
+    "8": {
+      "name": "hawleye",
+      "modifier": "missile fire damage rolls"
+    },
+    "9": {
+      "name": "pack hunter",
+      "modifier": "attack and damage rolls for 0-level starting weapons"
+    },
+    "10": {
+      "name": "born under the loom",
+      "modifier": "skill checks"
+    },
+    "11": {
+      "name": "fox's cunning",
+      "modifier": "find/disable traps"
+    },
+    "12": {
+      "name": "four-leafed clover",
+      "modifier": "find secret doors"
+    },
+    "13": {
+      "name": "seventh son",
+      "modifier": "spell checks"
+    },
+    "14": {
+      "name": "the raging storm",
+      "modifier": "spell damage"
+    },
+    "15": {
+      "name": "righteous heart",
+      "modifier": "turn unholy checks"
+    },
+    "16": {
+      "name": "survived the plague",
+      "modifier": "magical healing (to and from)"
+    },
+    "17": {
+      "name": "lucky sign",
+      "modifier": "saving throws"
+    },
+    "18": {
+      "name": "guardian angel",
+      "modifier": "saving throws to escape traps"
+    },
+    "19": {
+      "name": "survived a spider bite",
+      "modifier": "saving throws against poison"
+    },
+    "20": {
+      "name": "struck by lightning",
+      "modifier": "reflex saving throws"
+    },
+    "21": {
+      "name": "lived through famine",
+      "modifier": "fortitude saving throws"
+    },
+    "22": {
+      "name": "resisted temptation",
+      "modifier": "willpower saving throws"
+    },
+    "23": {
+      "name": "charmed house",
+      "modifier": "armor class"
+    },
+    "24": {
+      "name": "speed of the cobra",
+      "modifier": "initiative"
+    },
+    "25": {
+      "name": "bountiful harvest",
+      "modifier": "hit points per level"
+    },
+    "26": {
+      "name": "warrior's arm",
+      "modifier": "critical hit tables"
+    },
+    "27": {
+      "name": "unholy house",
+      "modifier": "corruption rolls"
+    },
+    "28": {
+      "name": "the broken star",
+      "modifier": "fumbles"
+    },
+    "29": {
+      "name": "birdsong",
+      "modifier": "number of languages"
+    },
+    "30": {
+      "name": "wild child",
+      "modifier": "speed by 5 feet"
+    }
+  }
