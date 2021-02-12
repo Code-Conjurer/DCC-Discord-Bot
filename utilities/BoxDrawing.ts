@@ -10,13 +10,13 @@ const firstLine = '₁₁ ₀ ₁₁ ₀ ₁₀ ₁ ₁₁₁ | ₁₁ ₁₁₁
 const BOX_LENGTH = 65;
 const breakAfterPiority = [new RegExp("[,|\\.|\\t|!|?]"),new RegExp("[ |\\-|=|{|}|)|\\\|_|\\t]")];
 
-function BoxifyString(str) {
+function BoxifyString(str: string): string {
     const strArr = String(str).split('\n');
 
     return Boxify(strArr.map(s => s.trim()));
 }
 
-function FormatStringArr(arr) {
+function FormatStringArr(arr: string[]) {
 
     let result = arr;
 
@@ -34,7 +34,7 @@ function FormatStringArr(arr) {
             let left = '';
             let right = '';
 
-            if (splitIndex == -1) {
+            if (splitIndex == -1 || splitIndex == undefined) {
                 left = s.substring(0, BOX_LENGTH);
                 right = s.substring(BOX_LENGTH);
             } else {
@@ -54,21 +54,17 @@ function FormatStringArr(arr) {
     return result;
 }
 
-function Boxify(s) {
-    let arr;
+function Boxify(s: string[] | string): string {
     if (typeof s == 'string') return BoxifyString(s);
-    else if (Array.isArray(s)) arr = s;
-
-    arr = FormatStringArr(arr);
 
     let result = firstLine + '\n';
-    let maxLength = Math.max(...(arr.map(el => el.length)));
+    let maxLength = Math.max(...(s.map(el => el.length)));
 
     const top = '`' + box.topLeft + box.center.repeat(maxLength + 2) + box.topRight + '`\n';
     const bot = '`' + box.botLeft + box.center.repeat(maxLength + 2) + box.botRight + '`';
 
     result += top;
-    arr.forEach(str => {
+    s.forEach(str => {
         const spaces = ' '.repeat(maxLength - str.length);
         result += '`' + box.side + ' ' + str + spaces + ' ' + box.side + '`\n';
     });
@@ -77,4 +73,4 @@ function Boxify(s) {
     return result;
 }
 
-exports.Boxify = Boxify;
+export default Boxify;
