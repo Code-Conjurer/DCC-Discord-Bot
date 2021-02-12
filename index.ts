@@ -1,6 +1,6 @@
 import fs = require('fs');
 import Discord = require('discord.js');
-
+//foo
 import config from './config.json';
 
 const client = new Discord.Client();
