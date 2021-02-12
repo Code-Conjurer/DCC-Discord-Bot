@@ -1,12 +1,8 @@
 import fs = require('fs');
 import Discord = require('discord.js');
-// import config from './config.json';
-//import ICommand from './interfaces/ICommand';
 
-const config = {
-	"prefix": "~",
-	"token": "Nzc3Mjk0ODE2MDA5NzgxMjc4.X7BWNQ.SmntsJj_Qi7adAELyOmpj4_szp4"
-};
+import config from './config.json';
+
 const client = new Discord.Client();
 const clientCommands: Discord.Collection<string, any> = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
