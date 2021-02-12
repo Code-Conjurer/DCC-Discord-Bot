@@ -58,6 +58,8 @@ function Boxify(s: string[] | string): string {
     if (typeof s == 'string') return BoxifyString(s);
 
     let result = firstLine + '\n';
+
+    s = FormatStringArr(s);
     let maxLength = Math.max(...(s.map(el => el.length)));
 
     const top = '`' + box.topLeft + box.center.repeat(maxLength + 2) + box.topRight + '`\n';
