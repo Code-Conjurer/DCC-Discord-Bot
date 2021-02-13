@@ -30,14 +30,18 @@ function formatResultData(obj: {[key: string]: any}, level = 0): string{
         const value = obj[key];
 
         if(Array.isArray(value)){
+
             value.forEach((ele, index, arr) => {
-                if(typeof value === 'object'){
+                if(typeof ele === 'object'){
                     temp += '\n' + formatResultData(ele, level + 1);
                 } else {
-                    temp += '\n' + ele;
+                    temp += level > 0? '\n' + levelSpace.repeat(level) + levelMarker + ' ': '\n';
+                    temp += ele;
                 }
-                temp += level > 0? '\n' + levelSpace.repeat(level-1): '\n';
-                temp += index !== arr.length-1? levelDivider: '';
+                if(index !== arr.length-1){
+                    temp += level > 0? '\n' + levelSpace.repeat(level): '\n';
+                    temp += levelDivider;
+                }
             });
 
         }else if(typeof value === 'object' && Object.keys(value).length !== 0){
