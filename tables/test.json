@@ -8,7 +8,12 @@
                     "a":{
                         "test":0
                     },
-                    "wow":"so cool"
+                    "wow":"so cool",
+                    "arr":[
+                        "foo",
+                        "bar",
+                        "rar"
+                    ]
                 }
             }
         },

@@ -2,6 +2,10 @@ import getFromTable from "../utilities/getFromTable";
 import Discord = require('discord.js');
 import Boxify from "../utilities/BoxDrawing";
 
+const levelSpace = '┃  ';
+const levelMarker = '┣━━';
+const levelDivider = '┣┅┅┅┅┅┅';
+
 export function rollOnTable (message: Discord.Message, args: string[]){
     const tableName = args.join('_');
 
@@ -16,27 +20,39 @@ export function rollOnTable (message: Discord.Message, args: string[]){
     message.channel.send(Boxify(resultData));
 }
 
-function formatResultData(obj: {[key: string]: any}, result: string = '', level = 0): string{
+function formatResultData(obj: {[key: string]: any}, level = 0): string{
+
+    let result: string = '';
 
     Object.keys(obj).forEach(key => {
 
         let temp = '';
+        const value = obj[key];
 
-        if(typeof obj[key] === 'object' && Object.keys(obj[key]).length !== 0){
-            temp += '\n' + formatResultData(obj[key], '', level + 1) + '\n';
+        if(Array.isArray(value)){
+            value.forEach((ele, index, arr) => {
+                if(typeof value === 'object'){
+                    temp += '\n' + formatResultData(ele, level + 1);
+                } else {
+                    temp += '\n' + ele;
+                }
+                temp += level > 0? '\n' + levelSpace.repeat(level-1): '\n';
+                temp += index !== arr.length-1? levelDivider: '';
+            });
 
-        }else if(obj[key] !== '' && obj[key] !== undefined && obj[key] !== null){
-            temp += obj[key] + '\n';
+        }else if(typeof value === 'object' && Object.keys(value).length !== 0){
+            temp += '\n' + formatResultData(value, level + 1) + '\n';
+
+        }else if(value !== '' && value !== undefined && value !== null){
+            temp += value + '\n';
         }else{
             return;
         }
 
-        result += level > 0? '   '.repeat(level-1) + '┣━━' + ' ': '';
+        result += level > 0? levelSpace.repeat(level-1) + levelMarker + ' ': '';
         result += key + ': ';
         result += temp;
     });
 
-    return result.trim();
+    return result.replace(/\n$/, '');//remove last newline char
 }
-
-export default rollOnTable

@@ -13,7 +13,7 @@ const breakAfterPiority = [new RegExp("[,|\\.|\\t|!|?]"),new RegExp("[ |\\-|=|{|
 function BoxifyString(str: string): string {
     const strArr = String(str).split('\n');
 
-    return Boxify(strArr.map(s => s.trim()));
+    return Boxify(strArr);
 }
 
 function FormatStringArr(arr: string[]) {
