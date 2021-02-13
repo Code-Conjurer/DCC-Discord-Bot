@@ -1,13 +1,17 @@
-import rollOnTable from "../utilities/rollOnTable"
+import getFromTable from "../utilities/getFromTable";
 import Discord = require('discord.js');
 import Boxify from "../utilities/BoxDrawing";
 
-export function roll (message: Discord.Message, args: string[]){
-    const argsStr = args.join('_');
+export function rollOnTable (message: Discord.Message, args: string[]){
+    const tableName = args.join('_');
 
-    const rollResult: {[key: string]: any} = rollOnTable(argsStr);
+    const range = getFromTable.tableRange(tableName);
+    const roll = Math.floor(Math.random() * range) + 1;
 
-    let resultData: string = formatResultData(rollResult);
+    let resultData = `roll: ${roll}\n`
+    const tableResult: {[key: string]: any} = getFromTable.tableData(tableName, roll);
+
+    resultData += formatResultData(tableResult);
 
     message.channel.send(Boxify(resultData));
 }
@@ -16,19 +20,23 @@ function formatResultData(obj: {[key: string]: any}, result: string = '', level 
 
     Object.keys(obj).forEach(key => {
 
-        let temp = level > 0? '━'.repeat(level): '';
-        temp +=  + key + ': ';
+        let temp = '';
 
-        if(typeof obj[key] === 'object'){
-            temp += '\n' + formatResultData(obj, temp, level + 1);
-        }else{
+        if(typeof obj[key] === 'object' && Object.keys(obj[key]).length !== 0){
+            temp += '\n' + formatResultData(obj[key], '', level + 1) + '\n';
+
+        }else if(obj[key] !== '' && obj[key] !== undefined && obj[key] !== null){
             temp += obj[key] + '\n';
+        }else{
+            return;
         }
 
+        result += level > 0? '   '.repeat(level-1) + '┣━━' + ' ': '';
+        result += key + ': ';
         result += temp;
     });
 
-    return result;
+    return result.trim();
 }
 
-export default roll
+export default rollOnTable

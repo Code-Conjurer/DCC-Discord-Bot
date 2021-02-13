@@ -10,6 +10,6 @@ module.exports = {
      * @param {any} args
      */
 	execute(message, args) {
-        tableCmd.roll(message, args);
+        tableCmd.rollOnTable(message, args);
 	}
 };
