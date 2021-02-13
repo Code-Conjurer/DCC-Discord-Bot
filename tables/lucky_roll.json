@@ -1,4 +1,8 @@
+
 {
+  "roll": 30,
+  "table":
+  {
     "1": {
       "name": "harsh winter",
       "modifier": "attack rolls"
@@ -120,3 +124,4 @@
       "modifier": "speed by 5 feet"
     }
   }
+}

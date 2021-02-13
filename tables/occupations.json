@@ -1,4 +1,6 @@
 {
+  "roll": 100,
+  "table":{
     "1": {
       "name": "alchemist",
       "trained_weapon": {
@@ -1060,3 +1062,4 @@
       ]
     }
   }
+}

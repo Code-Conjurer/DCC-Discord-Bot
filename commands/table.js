@@ -1,8 +1,8 @@
-const rollHelper = require("./rollCmd");
+const tableCmd = require("./tableCmd");
 
 module.exports = {
-	name: 'roll',
-    aliases: ['r'],
+	name: 'table',
+    aliases: ['t'],
 	description: 'Information about the arguments provided.',
 	
     /**
@@ -10,6 +10,6 @@ module.exports = {
      * @param {any} args
      */
 	execute(message, args) {
-        rollHelper.roll(message, args);
+        tableCmd.roll(message, args);
 	}
 };
