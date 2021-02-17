@@ -5,11 +5,13 @@ const fs = require('fs');
 
 let foo = {};
 
-for(let i = 1; i <= 30; i++){
+for(let i = 1; i <= 24; i++){
+    // @ts-ignore
     foo[i] = {
         "name": "",
-        "modifier" : ""
-    };
+        "quantity": "",
+        "value": ""
+      };
 }
 
 console.log("foo");

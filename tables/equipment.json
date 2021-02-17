@@ -1,0 +1,127 @@
+
+{
+    "roll": 24,
+    "table":
+    {
+        "1": {
+          "name": "backpack",
+          "quantity": "",
+          "value": "2 gp"
+        },
+        "2": {
+          "name": "candle",
+          "quantity": "",
+          "value": "1 cp"
+        },
+        "3": {
+          "name": "chain",
+          "quantity": "10'",
+          "value": "30 gp"
+        },
+        "4": {
+          "name": "chalk",
+          "quantity": "1 piece",
+          "value": "1 cp"
+        },
+        "5": {
+          "name": "chest, empty",
+          "quantity": "",
+          "value": "2 gp"
+        },
+        "6": {
+          "name": "crowbar",
+          "quantity": "",
+          "value": "2 gp"
+        },
+        "7": {
+          "name": "flask, empty",
+          "quantity": "",
+          "value": "3 cp"
+        },
+        "8": {
+          "name": "flint & steel",
+          "quantity": "",
+          "value": "15 cp"
+        },
+        "9": {
+          "name": "grappling hook",
+          "quantity": "",
+          "value": "1 gp"
+        },
+        "10": {
+          "name": "hammer, small",
+          "quantity": "",
+          "value": "5 sp"
+        },
+        "11": {
+          "name": "holy symbol",
+          "quantity": "",
+          "value": "25 gp"
+        },
+        "12": {
+          "name": "holy water",
+          "quantity": "1 vial",
+          "value": "25 gp"
+        },
+        "13": {
+          "name": "iron spikes",
+          "quantity": "1",
+          "value": "1 sp"
+        },
+        "14": {
+          "name": "lantern",
+          "quantity": "",
+          "value": "10 gp"
+        },
+        "15": {
+          "name": "mirror, hand-sized",
+          "quantity": "",
+          "value": "10 gp"
+        },
+        "16": {
+          "name": "oil",
+          "quantity": "1 flask",
+          "value": "2 sp"
+        },
+        "17": {
+          "name": "pole, 10-foot",
+          "quantity": "",
+          "value": "15 cp"
+        },
+        "18": {
+          "name": "rations, per day",
+          "quantity": "1",
+          "value": "5 cp"
+        },
+        "19": {
+          "name": "rope",
+          "quantity": "50'",
+          "value": "25 cp"
+        },
+        "20": {
+          "name": "sack, large",
+          "quantity": "",
+          "value": "12 cp"
+        },
+        "21": {
+          "name": "sack, small",
+          "quantity": "",
+          "value": "8 cp"
+        },
+        "22": {
+          "name": "thieves' tools",
+          "quantity": "",
+          "value": "25 gp"
+        },
+        "23": {
+          "name": "torch",
+          "quantity": "",
+          "value": "1 cp"
+        },
+        "24": {
+          "name": "waterskin",
+          "quantity": "",
+          "value": "5 sp"
+        }
+      }
+  }
