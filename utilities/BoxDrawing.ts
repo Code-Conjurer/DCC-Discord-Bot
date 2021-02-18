@@ -76,10 +76,10 @@ function FormatObject(obj: { [key: string]: any }, level = 0): string{
                     temp += level > 0? '\n' + levelSpace.repeat(level) + levelMarker + ' ': '\n';
                     temp += ele;
                 }
-                if(index !== arr.length-1){
+                /*if(index !== arr.length-1){
                     temp += level > 0? '\n' + levelSpace.repeat(level): '\n';
                     temp += levelDivider;
-                }
+                }*/
             });
 
         }else if(typeof value === 'object' && Object.keys(value).length !== 0){
