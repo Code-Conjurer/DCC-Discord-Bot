@@ -1,5 +1,5 @@
 import Discord = require('discord.js');
-import Boxify from "../utilities/BoxDrawing";
+import BoxDrawing from "../utilities/BoxDrawing";
 
 const rollRegex = new RegExp(
     "([1-9][0-9]*)?" +          // number
@@ -68,7 +68,7 @@ export function roll (message: Discord.Message, args: string[]){
 
     diceBreakdown.unshift(`${message.author.username} rolls: ${sum}`);
     
-    message.channel.send(Boxify(diceBreakdown));
+    message.channel.send(BoxDrawing.Boxify(diceBreakdown));
 }
 
 //module.exports.roll = roll;
