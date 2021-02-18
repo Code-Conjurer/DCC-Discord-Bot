@@ -69,17 +69,20 @@ function FormatObject(obj: { [key: string]: any }, level = 0): string{
 
         if(Array.isArray(value)){
 
+            let atLeastOneObject = false;
             value.forEach((ele, index, arr) => {
                 if(typeof ele === 'object'){
+                    atLeastOneObject = true;
                     temp += '\n' + FormatObject(ele, level + 1);
                 } else {
                     temp += level > 0? '\n' + levelSpace.repeat(level) + levelMarker + ' ': '\n';
                     temp += ele;
                 }
-                /*if(index !== arr.length-1){
+                if(atLeastOneObject && index !== arr.length-1){
+                    // adds a divider if there are objects in array
                     temp += level > 0? '\n' + levelSpace.repeat(level): '\n';
                     temp += levelDivider;
-                }*/
+                }
             });
 
         }else if(typeof value === 'object' && Object.keys(value).length !== 0){
