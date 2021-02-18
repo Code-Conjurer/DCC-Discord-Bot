@@ -102,6 +102,11 @@ function FormatObject(obj: { [key: string]: any }, level = 0): string{
     return result.replace(/\n$/, '');//remove last newline char
 }
 
+// We can only have 2000 characters in discord, so we replace as many as possible with tabs
+function whiteSpaceOptimizer(s: string){
+    return s.replace('    ', '\t');
+}
+
 function Boxify(s: string[] | string): string {
     if (typeof s == 'string') return BoxifyString(s);
 
@@ -120,7 +125,7 @@ function Boxify(s: string[] | string): string {
     });
     result += bot;
 
-    return result;
+    return whiteSpaceOptimizer(result);
 }
 
 export default {Boxify, FormatObject};

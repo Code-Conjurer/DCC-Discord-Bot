@@ -1,12 +1,12 @@
 interface ICharacter {
     "hit points": number,
-    "attributes" : {
-        "strength": attribute,
-        "agility": attribute,
-        "stamina": attribute,
-        "personality": attribute,
-        "intelligence": attribute,
-        "luck": attribute
+    "attributes": {
+        "strg": string,
+        "agil": string,
+        "stam": string,
+        "pers": string,
+        "intl": string,
+        "luck": string
     },
     "rolls": {
         "reflex": number,
@@ -14,8 +14,8 @@ interface ICharacter {
         "willpower": number,
         "aromor class": number,
     },
-    "equipment" : IEquipment[],
-    "features" : { [key: string]: any }[];
+    "equipment": IEquipment[],
+    "features": { [key: string]: any }[];
 }
 
 interface IEquipment {
@@ -24,15 +24,15 @@ interface IEquipment {
     "value": string
 }
 
-class attribute {
+class Attribute {
     score: number;
     mod: number;
 
     constructor(score: number) {
-        if(score < 0) throw new Error(`score cannot be negative: ${score}`);
-        
+        if (score < 0) throw new Error(`score cannot be negative: ${score}`);
+
         this.score = score;
-        switch(this.score){
+        switch (this.score) {
             case 0:
             case 1:
             case 2:
@@ -71,11 +71,17 @@ class attribute {
                 this.mod = 3;
                 break;
         }
-      }
-
-    public toString = () : string => {
-        return this.mod >= 0? `${this.score} | +${this.mod}`: `${this.score} | ${this.mod}`;
     }
-}
 
-export default ICharacter;
+    public toString = (): string => {
+        let scoreStr;
+        let modStr;
+        scoreStr = this.score < 10? ` ${this.score}` : `${this.score}`;
+        modStr = this.mod >= 0 ? `+${this.mod}` : `${this.mod}`;
+
+        return `${scoreStr} | ${modStr}`;
+    }
+
+}
+export { IEquipment, ICharacter };
+export default Attribute;
