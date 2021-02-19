@@ -161,10 +161,15 @@ function generateCharacter(rollLog: IRollLog, isHpRolledTwice: boolean): ICharac
         }else if(luckMod.includes("willpower")){
             character.rolls.willpower += ` ${attributes.luck.modToString()}`;
 
-        }else{
+        }else if(luckMod.trim() === "saving throws"){
+            character.rolls.reflex += ` ${attributes.luck.modToString()}`;
+            character.rolls.fortitude += ` ${attributes.luck.modToString()}`;
+            character.rolls.willpower += ` ${attributes.luck.modToString()}`;
+        }else {
             character.rolls.reflex += ` ${attributes.luck.modToString()}*`;
             character.rolls.fortitude += ` ${attributes.luck.modToString()}*`;
             character.rolls.willpower += ` ${attributes.luck.modToString()}*`;
+
         }
 
     } else if (luckMod.includes("armor class")){
