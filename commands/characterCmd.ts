@@ -134,7 +134,7 @@ function generateCharacter(rollLog: IRollLog, isHpRolledTwice: boolean): ICharac
     character.equipment.push(trainedWeapon);
     character.equipment.push(equipment);
 
-    character.features.push(luckyRoll);
+    character.features.push({"lucky roll": luckyRoll});
 
     // we now do all the calculations
     character.rolls.reflex = attributes.agil.mod + "";
