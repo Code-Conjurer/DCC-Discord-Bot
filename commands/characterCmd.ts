@@ -8,12 +8,23 @@ const luckyRollTable = "lucky_roll";
 const occpuationsTable = "occupations";
 const equipmentTable = "equipment";
 
+let lastRoll: IRollLog
+
 export function characterCommand (message: Discord.Message, args: string[]){
 
     const rollLog = generateRollLog();
-    if(args.shift() === "log"){
+
+    const firstArg = args.shift();
+
+    if(firstArg === "log"){
         message.channel.send(BoxDrawing.Boxify(BoxDrawing.FormatObject(rollLog)));
+    }else if(firstArg === "plog"){
+        if(lastRoll === undefined) throw new Error("no previous log found");
+        message.channel.send(BoxDrawing.Boxify(BoxDrawing.FormatObject(lastRoll)));
+        return;
     }
+
+    lastRoll = rollLog;
 
     const characterString = BoxDrawing.FormatObject(generateCharacter(rollLog, true));
     message.channel.send(BoxDrawing.Boxify(characterString));
