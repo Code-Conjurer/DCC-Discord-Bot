@@ -76,7 +76,7 @@ function generateCharacter(isHpRolledTwice = true): ICharacter{
         "quantity": ""
     }
     if(occupation["trained_weapon"]["type"] !== ""){
-        trainedWeapon.name += ` as ${occupation["trained_weapon"]["type"]}`;
+        trainedWeapon.name += ` (as ${occupation["trained_weapon"]["type"]})`;
     }
     character.equipment.push(trainedWeapon);
     character.equipment.push(equipment);
