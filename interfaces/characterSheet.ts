@@ -1,5 +1,6 @@
 interface ICharacter {
-    "hit points": number,
+    "hit points": string,
+    "occupation": string,
     "attributes": {
         "strg": string,
         "agil": string,
@@ -9,10 +10,10 @@ interface ICharacter {
         "luck": string
     },
     "rolls": {
-        "reflex": number,
-        "fortitude": number,
-        "willpower": number,
-        "aromor class": number,
+        "reflex": string,
+        "fortitude": string,
+        "willpower": string,
+        "aromor class": string,
     },
     "equipment": IEquipment[],
     "features": { [key: string]: any }[];
@@ -21,8 +22,22 @@ interface ICharacter {
 interface IEquipment {
     "name": string,
     "quantity": string,
-    "value": string
+    "value"?: string
 }
+
+interface ILuckyRoll {
+    "name": string,
+    "modifier": string,
+}
+
+interface IOccupation {
+    "name": string,
+    "trained_weapon": {
+      "name": string,
+      "type": string
+    },
+    "trade_goods": IEquipment[]
+  }
 
 class Attribute {
     score: number;
@@ -83,5 +98,5 @@ class Attribute {
     }
 
 }
-export { IEquipment, ICharacter };
+export { IEquipment, ICharacter, ILuckyRoll, IOccupation };
 export default Attribute;

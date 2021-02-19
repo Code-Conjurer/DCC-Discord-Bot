@@ -11,11 +11,13 @@ tableFiles.forEach(tableFile => {
     tables[name] = table;
 });
 
-function tableData(tableName: string, roll: number): {[key: string]: any}{
+function tableData(tableName: string, roll?: number): {[key: string]: any}{
     if(tables[tableName] == undefined) return {};
 
     const range = tableRange(tableName);
-    if(roll > range || roll < 1) return {};
+
+    if(roll === undefined) roll = Math.floor(Math.random() * range) + 1;
+    else if(roll > range || roll < 1) return {};
 
     const table = tables[tableName];
 
