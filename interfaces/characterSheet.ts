@@ -88,13 +88,17 @@ class Attribute {
         }
     }
 
+    modToString = (): string => {
+        return this.mod >= 0 ? `+${this.mod}` : `${this.mod}`;
+    }
+
     public toString = (): string => {
         let scoreStr;
         let modStr;
         scoreStr = this.score < 10? ` ${this.score}` : `${this.score}`;
         modStr = this.mod >= 0 ? `+${this.mod}` : `${this.mod}`;
 
-        return `${scoreStr} | ${modStr}`;
+        return `${scoreStr} | ${this.modToString()}`;
     }
 
 }

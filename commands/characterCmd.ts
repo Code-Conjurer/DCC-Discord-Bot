@@ -10,7 +10,7 @@ const equipmentTable = "equipment";
 
 export function characterCommand (message: Discord.Message, args: string[]){
 
-    const characterString = BoxDrawing.FormatObject(generateCharacter(args.shift() === "true"));
+    const characterString = BoxDrawing.FormatObject(generateCharacter(args.shift() === "false"));
     message.channel.send(BoxDrawing.Boxify(characterString));
 }
 
@@ -18,7 +18,7 @@ function roll(diceSize: number){
     return Math.floor(Math.random() * diceSize) + 1;
 }
 
-function generateCharacter(isHpRolledTwice = false): ICharacter{
+function generateCharacter(isHpRolledTwice = true): ICharacter{
     
     const character: ICharacter = {
         "hit points": "",
@@ -57,7 +57,7 @@ function generateCharacter(isHpRolledTwice = false): ICharacter{
     // now we need to do calculations
     if(!(Check.instanceOfSimpleObject<ILuckyRoll>(luckyRoll))) throw new Error(`lucky roll is not of the correct interface type`);
     if(!(Check.instanceOfSimpleObject<IEquipment>(equipment))) throw new Error(`equipment is not of the correct interface type`);
-    if(!(Check.instanceOfSimpleObject<IOccupation>(occupation))) throw new Error(`occupation is not of the correct interface type`);
+    if(!(Check.instanceOfOccupation(occupation))) throw new Error(`occupation is not of the correct interface type`);
     
     character.occupation = occupation["name"];
 
@@ -89,14 +89,17 @@ function generateCharacter(isHpRolledTwice = false): ICharacter{
     character.rolls.willpower = attributes.pers.mod + "";
     character.rolls["aromor class"] = (10 + attributes.agil.mod) + "";
 
+    let hp: number = -50;
     if(isHpRolledTwice) {
         const hp1 = roll(4);
         const hp2 = roll(4);
-
-        character["hit points"] = hp1 > hp2? (hp1 + attributes.stam.mod) + "": (hp2 + attributes.stam.mod) + "";
+        const hp = hp1 > hp2? (hp1 + attributes.stam.mod): (hp2 + attributes.stam.mod);
     }else{
-        character["hit points"] = (roll(6) + attributes.stam.mod) + "";
+        hp = (roll(6) + attributes.stam.mod);
     }
+    if(hp < 1) hp = 1;
+    character["hit points"] = hp + "";
+
 
     // lucky roll nodifier
     const luckMod = luckyRoll["modifier"];
@@ -104,25 +107,25 @@ function generateCharacter(isHpRolledTwice = false): ICharacter{
     //lucky roll modifies a saving throw
     if(luckMod.includes("saving throws")){
         if(luckMod.includes("reflex")){
-            character.rolls.reflex += ` ${attributes.luck.mod}`;
+            character.rolls.reflex += ` ${attributes.luck.modToString()}`;
 
         }else if(luckMod.includes("fortitude")){
-            character.rolls.fortitude += ` ${attributes.luck.mod}`;
+            character.rolls.fortitude += ` ${attributes.luck.modToString()}`;
 
         }else if(luckMod.includes("willpower")){
-            character.rolls.willpower += ` ${attributes.luck.mod}`;
+            character.rolls.willpower += ` ${attributes.luck.modToString()}`;
 
         }else{
-            character.rolls.reflex += ` ${attributes.luck.mod}*`;
-            character.rolls.fortitude += ` ${attributes.luck.mod}*`;
-            character.rolls.willpower += ` ${attributes.luck.mod}*`;
+            character.rolls.reflex += ` ${attributes.luck.modToString()}*`;
+            character.rolls.fortitude += ` ${attributes.luck.modToString()}*`;
+            character.rolls.willpower += ` ${attributes.luck.modToString()}*`;
         }
 
     } else if (luckMod.includes("armor class")){
-        character.rolls["aromor class"] += ` ${attributes.luck.mod}`;
+        character.rolls["aromor class"] += ` ${attributes.luck.modToString()}`;
 
     } else if (luckMod.includes("hit points")){
-        character["hit points"] += ` ${attributes.luck.mod}`;
+        character["hit points"] += ` ${attributes.luck.modToString()}`;
     }
 
     return character;
