@@ -10,15 +10,57 @@ const equipmentTable = "equipment";
 
 export function characterCommand (message: Discord.Message, args: string[]){
 
-    const characterString = BoxDrawing.FormatObject(generateCharacter(args.shift() === "false"));
+    const rollLog = generateRollLog();
+    if(args.shift() === "log"){
+        message.channel.send(BoxDrawing.Boxify(BoxDrawing.FormatObject(rollLog)));
+    }
+
+    const characterString = BoxDrawing.FormatObject(generateCharacter(rollLog, true));
     message.channel.send(BoxDrawing.Boxify(characterString));
 }
+
+interface IRollLog {
+    "hit points": number[],
+    "attributes" : {
+        "strg": number[],
+        "agil": number[],
+        "stam": number[],
+        "pers": number[],
+        "intl": number[],
+        "luck": number[]
+    },
+    "occupation": number,
+    "equipment": number,
+    "lucky roll": number
+}
+
 
 function roll(diceSize: number){
     return Math.floor(Math.random() * diceSize) + 1;
 }
 
-function generateCharacter(isHpRolledTwice = true): ICharacter{
+function generateRollLog(): IRollLog{
+    const occuparionRange = getFromTable.tableRange(occpuationsTable);
+    const equipmentRange = getFromTable.tableRange(equipmentTable);
+    const luckyRollRange = getFromTable.tableRange(luckyRollTable);
+
+    return {
+        "hit points": [roll(4), roll(4)],
+        "attributes" : {
+            "strg": [roll(6),roll(6),roll(6),],
+            "agil": [roll(6),roll(6),roll(6),],
+            "stam": [roll(6),roll(6),roll(6),],
+            "pers": [roll(6),roll(6),roll(6),],
+            "intl": [roll(6),roll(6),roll(6),],
+            "luck": [roll(6),roll(6),roll(6),]
+        },
+        "occupation": roll(occuparionRange),
+        "equipment": roll(equipmentRange),
+        "lucky roll": roll(luckyRollRange)
+    }
+}
+
+function generateCharacter(rollLog: IRollLog, isHpRolledTwice: boolean): ICharacter{
     
     const character: ICharacter = {
         "hit points": "",
@@ -42,17 +84,17 @@ function generateCharacter(isHpRolledTwice = true): ICharacter{
     };
 
     const attributes = {
-        "strg": new Attribute(roll(6) + roll(6) + roll(6)),
-        "agil": new Attribute(roll(6) + roll(6) + roll(6)),
-        "stam": new Attribute(roll(6) + roll(6) + roll(6)),
-        "pers": new Attribute(roll(6) + roll(6) + roll(6)),
-        "intl": new Attribute(roll(6) + roll(6) + roll(6)),
-        "luck": new Attribute(roll(6) + roll(6) + roll(6))
+        "strg": new Attribute(rollLog.attributes.strg.reduce((a, b) => a + b, 0)),
+        "agil": new Attribute(rollLog.attributes.agil.reduce((a, b) => a + b, 0)),
+        "stam": new Attribute(rollLog.attributes.stam.reduce((a, b) => a + b, 0)),
+        "pers": new Attribute(rollLog.attributes.pers.reduce((a, b) => a + b, 0)),
+        "intl": new Attribute(rollLog.attributes.intl.reduce((a, b) => a + b, 0)),
+        "luck": new Attribute(rollLog.attributes.luck.reduce((a, b) => a + b, 0))
     };
 
-    const luckyRoll = getFromTable.tableData(luckyRollTable);
-    const equipment = getFromTable.tableData(equipmentTable);
-    const occupation = getFromTable.tableData(occpuationsTable);
+    const luckyRoll = getFromTable.tableData(luckyRollTable, rollLog["lucky roll"]);
+    const equipment = getFromTable.tableData(equipmentTable, rollLog.equipment);
+    const occupation = getFromTable.tableData(occpuationsTable, rollLog.occupation);
 
     // now we need to do calculations
     if(!(Check.instanceOfSimpleObject<ILuckyRoll>(luckyRoll))) throw new Error(`lucky roll is not of the correct interface type`);
@@ -89,14 +131,7 @@ function generateCharacter(isHpRolledTwice = true): ICharacter{
     character.rolls.willpower = attributes.pers.mod + "";
     character.rolls["aromor class"] = (10 + attributes.agil.mod) + "";
 
-    let hp: number = -50;
-    if(isHpRolledTwice) {
-        const hp1 = roll(4);
-        const hp2 = roll(4);
-        const hp = hp1 > hp2? (hp1 + attributes.stam.mod): (hp2 + attributes.stam.mod);
-    }else{
-        hp = (roll(6) + attributes.stam.mod);
-    }
+    let hp = Math.max(...rollLog["hit points"]) + attributes.stam.mod;
     if(hp < 1) hp = 1;
     character["hit points"] = hp + "";
 
