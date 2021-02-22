@@ -18,7 +18,7 @@ function tableData(tableName: string, roll: number): { [key: string]: any } {
 
     const table = tables[tableName];
 
-    while (roll > 0 && table.table[String(roll)] == undefined) {
+    while (table.table[String(roll)] == undefined) {
         if (roll > 0)
             roll--;
         else
