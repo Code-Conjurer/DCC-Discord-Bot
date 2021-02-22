@@ -4,20 +4,9 @@ import BoxDrawing from "../utilities/BoxDrawing";
 const rollRegex = new RegExp(
     "([1-9][0-9]*)?" +          // number
     "d" +                       // 'd'
-    "([1-9][0-9]*)" +           // number
+    "([1-9][0-9]*|0)" +         // number 1+ or zero (d0 will just do addition/multiplication)
     "\\s*" +                    // any string  
     "(([\\+|\\-|\\*|/])\\s*([0-9]+))?", 'g');  //(('+' or '-' number) multiple times 
-
-/*class roll implements ICommand{
-    public aliases = ['r'];
-    args? = true;
-	description = 'Information about the arguments provided.';
-	execute = (message: Discord.Message, args: string[]): void => {
-        
-        rollDie(message, args);
-	}
-    
-}*/
 
 // args can be the form
 // args = d2+3
@@ -25,10 +14,21 @@ const rollRegex = new RegExp(
 // args = 1d20 + 3
 export function roll (message: Discord.Message, args: string[]){
 
+    let result = rollFromArgs(args);
+
+    result.breakdown.unshift(`${message.author.username} rolls: ${result.sum}`);
+    
+    message.channel.send(BoxDrawing.Boxify(result.breakdown));
+}
+
+//TODO: Move function
+function rollFromArgs(args: string[]): {sum: number, breakdown: string[]}{
     const argsStr = args.join(' ');
 
-    let diceBreakdown = [];
-    let sum = 0;
+    let result: {sum: number, breakdown: string[]} = {
+        sum: 0, 
+        breakdown: []
+    };
 
     var matches;
     while((matches = rollRegex.exec(argsStr)) != null){
@@ -40,7 +40,7 @@ export function roll (message: Discord.Message, args: string[]){
         let localSum = 0;
         let breakdown = 'd' + diceSize + ': [ ';
         for(let i = 0; i < numDice; i++){
-            const value = Math.floor(Math.random() * diceSize) + 1;
+            const value = diceSize > 0? Math.floor(Math.random() * diceSize) + 1: 0;
 
             breakdown += i == numDice-1 ? value + ' ]' : value + ', ';
             localSum += value; 
@@ -61,14 +61,12 @@ export function roll (message: Discord.Message, args: string[]){
                 break;
         }
 
-        sum += localSum;
+        result.sum += localSum;
         breakdown += modifier == 0? '' : ` ${oporator}  ${modifier}`;
-        diceBreakdown.push(breakdown);
+        result.breakdown.push(breakdown);
     }
 
-    diceBreakdown.unshift(`${message.author.username} rolls: ${sum}`);
-    
-    message.channel.send(BoxDrawing.Boxify(diceBreakdown));
+    return result;
 }
 
-//module.exports.roll = roll;
+export default rollFromArgs;
