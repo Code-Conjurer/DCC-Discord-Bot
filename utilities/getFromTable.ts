@@ -6,7 +6,7 @@ let tables: { [name: string]: { roll: number, table: { [key: string]: object } }
 tableFiles.forEach(tableFile => {
     if (tableFile.includes(' ')) throw new Error("table name contains space");
 
-    const table = require(`../../tables/${tableFile}`);
+    const table = require(`../tables/${tableFile}`);
     const name = tableFile.replace('.json', '');
     tables[name] = table;
 });

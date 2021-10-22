@@ -6,9 +6,11 @@
   "dependencies": {
     "discord.js": "^12.5.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^15.9.0"
+  },
   "scripts": {
-    "start" : "tsc && node dist/index.js",
+    "start": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

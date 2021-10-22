@@ -1,2 +1,5 @@
 /config.json
 /dist/config.json
+/dist
+dist
+node_modules
